@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Z & 0-9 Character Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Kabeer Munshipalkar</h1>
+        <h2>A-Z & 0-9 Handwritten Character Recognition</h2>
+        
+        <div class="main-content">
+            <div class="drawing-area">
+                <h3>Draw a character:</h3>
+                <canvas id="canvas" width="400" height="400"></canvas>
+                <div class="controls">
+                    <button id="clearBtn">Clear</button>
+                    <button id="predictBtn">Predict</button>
+                </div>
+                
+                <div class="upload-section">
+                    <h3>Or upload an image:</h3>
+                    <input type="file" id="imageUpload" accept="image/*">
+                    <button id="uploadBtn">Upload & Predict</button>
+                </div>
+            </div>
+            
+            <div class="results-area">
+                <h3>Predictions:</h3>
+                <div id="predictions">
+                    <div class="prediction-item">
+                        <span class="label">-</span>
+                        <span class="accuracy">-</span>
+                    </div>
+                    <div class="prediction-item">
+                        <span class="label">-</span>
+                        <span class="accuracy">-</span>
+                    </div>
+                    <div class="prediction-item">
+                        <span class="label">-</span>
+                        <span class="accuracy">-</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

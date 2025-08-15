@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.main-content {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.drawing-area {
+    text-align: center;
+    min-width: 450px;
+}
+
+.drawing-area h3 {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+#canvas {
+    border: 3px solid #007bff;
+    border-radius: 5px;
+    cursor: crosshair;
+    background-color: white;
+}
+
+.controls {
+    margin-top: 15px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#clearBtn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#predictBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+.controls button:hover {
+    opacity: 0.8;
+}
+
+.upload-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.upload-section h3 {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+#imageUpload {
+    margin: 10px;
+    padding: 5px;
+}
+
+#uploadBtn {
+    padding: 10px 20px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#uploadBtn:hover {
+    opacity: 0.8;
+}
+
+.results-area {
+    min-width: 250px;
+}
+
+.results-area h3 {
+    margin-bottom: 15px;
+    color: #555;
+    text-align: center;
+}
+
+#predictions {
+    border: 2px solid #00c0c7;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.prediction-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: white;
+    border-radius: 3px;
+    border-left: 4px solid #007bff;
+}
+
+.prediction-item:nth-child(1) { border-left-color: #dc3545; }
+.prediction-item:nth-child(2) { border-left-color: #28a745; }
+.prediction-item:nth-child(3) { border-left-color: #007bff; }
+
+.label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.accuracy {
+    color: #666;
+}
