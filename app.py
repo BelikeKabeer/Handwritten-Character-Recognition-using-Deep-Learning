@@ -89,7 +89,7 @@ def predict_character(model, image):
     return best_predictions
 
 # Load model on startup
-model = load_model("models/best_val_loss_model.h5")
+model = load_model("model/best_val_loss_model.h5")
 
 @app.route('/')
 def index():
